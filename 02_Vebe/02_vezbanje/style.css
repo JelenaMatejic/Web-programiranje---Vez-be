@@ -1,0 +1,43 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header {
+    background-image: url('img/moon.jpeg');
+}
+
+header h1, header p {
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+nav {
+    background-color: navy;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 14px 16px; /* 14px gore i dole, 16px levo i desno */
+}
+
+nav ul {
+    list-style-type: none;
+    overflow: hidden;
+}
+
+nav li {
+    float: left;
+}
+
+#desno {
+    float: right;
+}
+
+nav li a:hover{
+    background-color: silver;
+    color: black;
+}

@@ -1,0 +1,59 @@
+Sa prezentacije Projekat - Društvena mreža slajdovi: 1-9 
+
+2. slajd
+Napraviti stranicu header.php koja će se uključivati u ostalim stranicama aplikacije.
+Stranica treba da otvori html tag, head tag u kojem će biti uključen css fajl, kao i body tag a unutar body tag-a meni.
+Meni treba da sadži tabove:
+- Home
+- Friends
+- Change profile
+- Change password
+- Logout
+
+3. slajd
+U ovom fajlu ne treba zatvarati body i html tagove!
+Ovi tagovi će biti zatvoreni u svakoj stranici koja uključi header.php.
+
+4. slajd
+Za domaći zadatak napravite stranica u koju ćete smeštati sve stilove koje budete koristili u ovom projektu
+Sve stranice koje je potrebno stilizovati, koristiće (uključiće) stil iz style.css stranice
+Stilove u projektu određujete samostalno, oni predstavljaju vaš lični pečat projektu. Budite kreativni, ali fokus neka bude na funkcionalnosti projekta, pa tek onda dizajnirajte dodatno stranicu.
+
+5. slajd
+Kreirati bazu podataka mreza
+Napraviti stranicu connection.php koja će kreirati konekciju ka bazi podataka mreza
+Ukoliko konakcija nije uspela, ispisati odgovarajuću poruku na ekranu
+
+6. slajd - 8. slajd
+Napraviti stranicu database.php koja će sadržati upite za kreiranje tabela u bazi podataka mreza
+Kreirati sledeće tabele, ukoliko ne postoje:
+users
+- id - neoznačeni ceo broj koji se automatski postavlja
+- username – varijabilni string maksimalne dužine 50 karaktera, jedinstven i ne sme biti null
+- pass – varijabilni string maksimalne dužine 255 karaktera i ne sme biti null
+
+profiles
+- id – neoznačeni ceo broj koji se automatski postavlja
+- name – varijabilni string maksimalne dužine 50 karaktera koji ne sme biti null
+- surname – varijabilni string maksimalne dužine 50 karaktera koji ne sme biti null
+- gender – string fiksne dužine 1 karakter
+- dob – datum rođenja korisnika
+- user_id – neoznačen jedinstven ceo broj koji je strani ključ iz tabele users
+
+followers
+- id – neoznačen ceo broj koji se automatski postavlja
+- sender_id – ne null vrednost koja predstavlja strani ključ iz tabele users
+- receiver_id – ne null vrednost koja predstavlja strani ključ iz tabele users
+
+9. slajd
+Kreirati stranicu register.php.
+Ova stranica namenjena je za registraciju korisnika i treba da sadrži formu za dodavanje novog korisnika sa poljima za unos podataka:
+- name – input polje tekstualnog tipa
+- surname – input polje tekstualnog tipa
+- gender – input polje radiobutton tipa
+- date of birth – input polje date tipa 
+- username – input polje tekstualnog tipa
+- password – input polje password tipa
+- retype password – input polje password tipa
+- submit dugme – input polje submit tipa
+

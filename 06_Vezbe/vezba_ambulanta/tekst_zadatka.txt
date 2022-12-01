@@ -1,0 +1,39 @@
+Vežbanje:
+Podeliti kod sa prethodnih vežbi u posebne falove:
+- connection.php
+- create_table.php
+- insert_query.php
+- select_query.php
+
+1. Selektovati bazu ambulanta
+2. Kreirati fajl index.php u kojem je potrebno ispisati naslov i u njemu tekst “Ambulanta”. 
+3. Na stranici index.php kreirati linkove koje je potrebno stilizovati kao dugmiće. Klikom na svaki link otvara se posebna .php koja predstavlja jedan zadatak sa sledećeg spiska zadataka. Na svakoj stranici, kreirati link ka početnoj index.php stranici.
+
+a) sortiranje_pacijenata.php
+    Prikazati tri tabele sa svim pacijentima iz baze podataka "ambulanta".
+    U prvoj su pacijenti sortirani po visini, u opadajućem redosledu.
+    U drugoj su pacijenti sortirani po težini, u opadajućem redosledu.
+    U tre su pacijenti sortirani po godini rođenja, od najstarijeg do najmlađeg.
+    Iznad svake tabele napisati naslov koji kazuje šta se u tabeli nalazi.
+b) pacijenti_1970_1990.php
+    Prikazati pacijente rođene izmedju 1970. i 1990. godine.
+c) natprosecno_teski.php
+    Prikazati sve natprosečno teške pacijente.
+d) visina_ispod_proseka.php
+    Prikazati sve pacijente visoke ispod proseka.
+e) maloletni.php
+    Prikazati sve maloletne pacijente. 
+f) bmi.php
+    Prikazati sve pacijente sa nezdravom težinom (BMI vrednost je manja od 18.5 ili veća od 30).
+g) imenik.php
+    Prikazati sve pacijente po sledećem principu: 
+    - Na početku stranice prikazati sva slova (u abecednom redu), to su slova kojima počinje neko prezime pacijenta. 
+    Na primer, ako u bazi podataka imamo prezimena Perić, Savić, Petrović, Lukić, Belić, Pavlović, Stošić, tada je potrebno prikazati slova B, L, P i S.
+    - Klikom na neko slovo, sidro vodi do tabele u kojoj su prikazani svi pacijenti čije prezime počinje na to slovo. Sve pacijente u okviru iste grupe sortirati po imenu.
+
+Bonus:
+h) imenik2.php
+    Prikazati sve pacijente po sledećem principu: 
+    - Prikazati sva prezimena pacijenata u abecednom redosledu.
+    - Klikom na svako prezime, sidro vodi do prikaza pacijenata koji imaju to prezime, pri čemu su ti pacijenti sortitane po imenu.
+    - Dodati ispisivanje srednje težina, kao i srednje visine svih pacijenata sa istim prezimenom.

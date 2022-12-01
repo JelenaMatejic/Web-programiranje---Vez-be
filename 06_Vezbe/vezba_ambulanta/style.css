@@ -1,0 +1,13 @@
+.button {
+    font: bold 14px Arial;
+    text-decoration: none;
+    background-color: #f1eeee;
+    color: #363535;
+    padding: 4px;
+    border: 1px solid black;
+    margin: 10px;
+  }
+
+a:hover {
+    background-color: white;
+}
