@@ -1,0 +1,35 @@
+Sa prezentacije Projekat - Društvena mreža slajdovi: 10-13
+
+Napraviti validaciju forme na stranici register.php tako da:
+- name i surname
+    - Treba da sadrži samo slova i praznine. 
+    - Odseći višak praznina (pre, u tekstu i nakon tekstualnog sadržaja)
+    - Ime i prezime ne sme biti duže od 50 karaktera
+- gender
+    - Može biti: 
+        - male (value m)
+        - female (value f)
+        - other (value o)
+    Other dugme je podrazumevano (default) čekirano
+    Value za svako od dugmeta mora biti jedan karakter
+- date of birth
+    - Ograničiti da nije moguće odabrati datum pre 1900. godine
+- usrename
+    - Može sadržati slova i specijalne karaktere, ali ne sme sadržati praznine i tabove
+    - Mora biti jedinstveno i ne sme se poklapati sa nekim već ranije unetim korisničkim imenom koje postoji u bazi podataka
+    - Dužina username teksta mora biti između 5 i 50 karaktera
+- password
+    - Može sadržati slova i specijalne karaktere, ali ne sme sadržati 
+      praznine i tabove
+    - Dužina lozinke mora biti između 5 i 25 karaktera
+    - Lozinku zaštititi (šifrovati)pomoću md5 funkcije 
+      i kao takvu je kasnije unositi u bazu podataka
+- retype password
+    - Važe ista pravila kao i za password
+    - Mora se poklapati sa sadržajem koji je unet u password polje
+
+Napraviti validaciju forme tako da:
+- submit dugme
+    - Klikom na submit dugme vrši se validacija forme i ukoliko neki od podataka nije u zadatim granicama, ispisati odgovarajuću poruku
+    - Ukoliko su svi podaci ispravno uneti, podatke uneti u bazu podataka i ispisati poruku da su podaci uneti (voditi računa o tome da lozinka mora biti uneta kao šifrovana, a ne kao string koji je korisnik uneo u input polje za password)
+
