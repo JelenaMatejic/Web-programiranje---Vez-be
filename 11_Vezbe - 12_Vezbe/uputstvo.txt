@@ -1,0 +1,20 @@
+- Dodati šifriranje lozinike
+- Uneti podatke iz registracione forme u bazu podataka
+    - Ukoliko je uspešna registracija, korisnika redirektovati na stranicu login.php
+    - Ukoliko nije uspešna registracija, u input poljima treba da budu upisane vrednosti koje je korisnik uneo i pored njih greške ispisane crvenom bojom
+
+- Kreirati stranicu followers.php na kojoj će se prikazivati korisnici društvene mreže i gde će se vršiti zahtev za praćenje korisnika
+- Postaviti promenljivu u kojoj će se nalaziti id korisnika koji je trenutno „ulogovan“
+- U odnosu na ulogovanog korisnika, na ekranu prikazati sve korisnike iz društvene mreže, osim ulogovanog korisnika (ne možemo biti pratilac samom sebi).
+- Prikaz korisnika treba biti tabelaran i od informacija je obavezno prikazati:
+    - Ime i prezime korisnika (kao jedna kolona)
+    - Korisničko ime
+    - Akcije
+- Ukoliko nema korisnika u društvenoj mreži, ispisati odgovarajuću poruku na ekranu
+- Tabelu korisnika možete proizvoljno stilizovati i dodati joj i pored obaveznih kolona dodati i proizvoljne kolone po želji
+- Osim prikaza tabele korisnika, prikazuje se i akcija koja predstavlja „prijateljstvo“ tj. praćenje između nas kao ulogovanog korisnika i korisnika koji imaju profile na našoj mrež
+- Akcija je link koji uzima jednu od vrednosti:
+    - Follow (zaprati korisnika) - Zaprati korisnika koji mene ne prati
+    - Follow back (uzvrati praćenje) - Zaprati korisnika koji mene već prati
+    - Unfollow (otkaži praćenje) - Prestani da pratiš korisnika
+- Klikom na akciju (link)u bazi podataka se automatski beleži novo stanje (praćenje/prijateljstvo) između dve osobe i tekst linka se automatski menja u odgovarajuće stanje.
